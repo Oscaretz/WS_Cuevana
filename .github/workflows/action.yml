@@ -2,9 +2,6 @@ name: Action
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - Feature/AutoServer 
 
 jobs:
   builds:
