@@ -3,7 +3,7 @@ import asyncio
 from bs4 import BeautifulSoup
 import time
 
-class Cuevana:
+class LetterBox:
     def __init__(self, url):
         self.url = url
         self.pelicula = {}
