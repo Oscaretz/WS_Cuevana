@@ -3,7 +3,7 @@ import asyncio
 from bs4 import BeautifulSoup
 import time
 
-class LetterBox:
+class Letterbox:
     def __init__(self, url):
         self.url = url
         self.pelicula = {}
@@ -44,8 +44,8 @@ async def main():
     # Lista de URLs de películas
     urls = ['https://letterboxd.com/film/the-dark-knight/']
 
-    # Crear instancias de Cuevana para cada URL
-    peliculas = [Cuevana(url) for url in urls]
+    # Crear instancias de Letterbox para cada URL
+    peliculas = [Letterbox(url) for url in urls]
 
     # Almacenar la información de todas las películas
     tasks = [pelicula.obtener_informacion_pelicula() for pelicula in peliculas]
